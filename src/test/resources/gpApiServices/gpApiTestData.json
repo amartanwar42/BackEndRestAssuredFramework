@@ -1,0 +1,14 @@
+{
+	"getBalance888TestData" :{
+	"request":"getaccount",
+	"apiversion":"1.4",
+	"loginname":"foo",
+	"password":"bar",
+	"sessionid":"c6cbb3bebbfa46a7b10db9ca661e0537",
+	"opid":929,
+	"gpid":100,
+	"gpgameid":"foxinwinsagain",
+	"device,":"mobile",
+	"currency":"GBP"	
+	}
+}

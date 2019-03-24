@@ -1,6 +1,5 @@
 package gpApiTests;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
 
 import clients.gpApiServices.GetGPAPIDetails;
@@ -20,7 +19,7 @@ public class GpApiTest extends BaseTest{
 		System.out.println("\n"+re.getAPIVERSION()+re.getBALANCE());
 	}
 	
-	@Test()
+	@Test(groups= {"SMOKE_TEST"})
 	public void getBalance888Test() 
 	{
 		GetGPAPIDetails getGPAPIDetails=new GetGPAPIDetails();
@@ -28,7 +27,7 @@ public class GpApiTest extends BaseTest{
 		response.verifyStatusCode(200);
 		response.assertApiVersion("1.4");
 	}
-	@Test()
+	@Test(groups= {"SMOKE_TEST","REGRESSION_TEST"})
 	public void getAccount888Test() 
 	{
 		GetGPAPIDetails getGPAPIDetails=new GetGPAPIDetails();

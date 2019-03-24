@@ -1,6 +1,7 @@
 package sApiTests;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import clients.sapiServices.PostSapiDetails;
 import entities.sApiServices.getbetlevel.GetbetlevelRequest;
