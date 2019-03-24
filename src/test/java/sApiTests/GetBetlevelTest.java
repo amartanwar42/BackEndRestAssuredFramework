@@ -1,8 +1,7 @@
 package sApiTests;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-
 import clients.sapiServices.PostSapiDetails;
 import entities.sApiServices.getbetlevel.GetbetlevelRequest;
 import entities.sApiServices.getbetlevel.GetbetlevelResponse;
@@ -11,7 +10,7 @@ import requestBuilder.sapiServices.getbetLevel.GetbetlevelRequestBuilder;
 
 public class GetBetlevelTest extends BaseTest{
 	
-	@Test
+	@Test(enabled=false)
 	public void getBetlevelTest()
 	{
 		GetbetlevelRequest getbetlevelRequest=new GetbetlevelRequestBuilder()
@@ -27,4 +26,9 @@ public class GetBetlevelTest extends BaseTest{
 		response.verifyStatusCode(200);
 	}
 
+	@Test()
+	public void ciTest()
+	{
+		Reporter.log("Checking CI",true);
+	}
 }
