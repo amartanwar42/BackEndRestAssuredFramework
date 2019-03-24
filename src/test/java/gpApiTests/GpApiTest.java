@@ -19,7 +19,7 @@ public class GpApiTest extends BaseTest{
 		System.out.println("\n"+re.getAPIVERSION()+re.getBALANCE());
 	}
 	
-	@Test(groups= {"SMOKE_TEST"})
+	@Test(groups= {"SMOKE_TEST"},enabled=false)
 	public void getBalance888Test() 
 	{
 		GetGPAPIDetails getGPAPIDetails=new GetGPAPIDetails();
@@ -27,7 +27,7 @@ public class GpApiTest extends BaseTest{
 		response.verifyStatusCode(200);
 		response.assertApiVersion("1.4");
 	}
-	@Test(groups= {"SMOKE_TEST","REGRESSION_TEST"})
+	@Test(groups= {"SMOKE_TEST","REGRESSION_TEST"},enabled=false)
 	public void getAccount888Test() 
 	{
 		GetGPAPIDetails getGPAPIDetails=new GetGPAPIDetails();
