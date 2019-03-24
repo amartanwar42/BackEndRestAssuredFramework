@@ -5,3 +5,5 @@ jobs:
       script: mvn clean
     - stage: unit tests
       script: mvn test
+      if: branch=master
+artifacts: /ogs-api-test/target/surefire-reports/emailable-report.html
